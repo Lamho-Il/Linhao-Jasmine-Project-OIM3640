@@ -3,11 +3,6 @@ Team members: Linhao Jiang, Jasmine Zhang
 
 
 Big Idea (Jasmine)
-Our project aims to develop a web-based application that leverages ChatGPT to provide personalized compatibility analyses and scores based on users' MBTI personality types and astrological signs. Users will input their and a partner's MBTI type and zodiac sign, and our application will generate a detailed compatibility report. 
-
-*Allows users to input two sets of MBTI types and zodiac signs.
-Uses ChatGPT to generate a basic compatibility score and analysis.
-Presents the analysis in a simple, user-friendly format on the web page.*
 
 
 Learning Goals (Linhao)
