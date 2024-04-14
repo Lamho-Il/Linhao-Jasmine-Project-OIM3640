@@ -26,7 +26,7 @@ We want to develop a team web platform that aims to improve the group project ex
 ### Individual Goal:
 
 1. Jasmine: Learn how to effectively utilize the OpenAI API within a Flask application. And enhance my skills in HTML, aiming to create an accessible and user-friendly web page.
-2. Linhao: Apply concepts learned in lectures to real-world cases like this.
+2. Linhao: Apply concepts learned in lectures to real-world cases like this. Furthermore, the ability to make a coherent webpage that combines the use of API and self-design algorithm. 
 
 ## Implementation Plan:
 
