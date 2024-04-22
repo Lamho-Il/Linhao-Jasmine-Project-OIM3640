@@ -23,7 +23,7 @@ def contact():
 
 
 # def get_compatibility_score(user_mbti, user_astro, groupmate_mbti, groupmate_astro):
-#     prompt = f"Assess compatibility between a person with MBTI {user_mbti} and astrological sign {user_astro} and another person with MBTI {groupmate_mbti} and astrological sign {groupmate_astro}."
+#     prompt = f"Assess compatibility between a person with MBTI {user_mbti} and astrological sign {user_astro} and another person(s) with MBTI {groupmate_mbti} and astrological sign {groupmate_astro}."
 
 #     try:
 #         response = OpenAI.Completion.create(
@@ -47,7 +47,7 @@ def submit():
 
         print(f"User MBTI: {user_mbti}, User Astro: {user_astro}")
 
-        for i in range(1, 5):  # 4 groupmates
+        for i in range(1, 4):  # 3 groupmates
             groupmate_mbti = request.form.get(f"groupmate{i}_mbti")
             groupmate_astro = request.form.get(f"groupmate{i}_astro")
             if groupmate_mbti and groupmate_astro:

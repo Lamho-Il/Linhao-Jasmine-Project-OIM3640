@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Pairing System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #333;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>MBTI and Astrological Sign-Based Student Pairing System</h1>
+        <p>Welcome to the future of group projects!</p>
+    </header>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2>Get Started</h2>
+            <p>Enter your MBTI type and astrological sign to find the best team match for your next project:</p>
+            <form action="/submit" method="post">
+                <label for="mbti">Your MBTI Type:</label>
+                <select name="mbti" id="mbti">
+                    <option value="INTJ">INTJ</option>
+                    <option value="ENTJ">ENTJ</option>
+                    <option value="ENTP">ENTP</option>
+                    <option value="INFJ">INFJ</option>
+                    <option value="INFP">INFP</option>
+                    <option value="ENFJ">ENFJ</option>
+                    <option value="ENFP">ENFP</option>
+                    <option value="ISTJ">ISTJ</option>
+                    <option value="ISFJ">ISFJ</option>
+                    <option value="ESTJ">ESTJ</option>
+                    <option value="ESFJ">ESFJ</option>
+                    <option value="ISTP">ISTP</option>
+                    <option value="ISFP">ISFP</option>
+                    <option value="ESTP">ESTP</option>
+                    <option value="ESFP">ESFP</option>
+                    <option value="INTP">INTP</option>
+                </select><br>
+                <label for="astro">Your Astrological Sign:</label>
+                <select name="astro" id="astro">
+                    <option value="Aries">Aries</option>
+                    <option value="Taurus">Taurus</option>
+                    <option value="Gemini">Gemini</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Sagittarius">Sagittarius</option>
+                    <option value="Capricorn">Capricorn</option>
+                    <option value="Aquarius">Aquarius</option>
+                    <option value="Pisces">Pisces</option>
+                </select><br>
+            
+                <h3>Potential Groupmates:</h3>
+                <!-- Inputs for groupmate 1 -->
+                <label>Groupmate 1 MBTI:</label>
+                <select name="groupmate1_mbti">
+                    <option value="INTJ">INTJ</option>
+                    <option value="ENTJ">ENTJ</option>
+                    <option value="ENTP">ENTP</option>
+                    <option value="INFJ">INFJ</option>
+                    <option value="INFP">INFP</option>
+                    <option value="ENFJ">ENFJ</option>
+                    <option value="ENFP">ENFP</option>
+                    <option value="ISTJ">ISTJ</option>
+                    <option value="ISFJ">ISFJ</option>
+                    <option value="ESTJ">ESTJ</option>
+                    <option value="ESFJ">ESFJ</option>
+                    <option value="ISTP">ISTP</option>
+                    <option value="ISFP">ISFP</option>
+                    <option value="ESTP">ESTP</option>
+                    <option value="ESFP">ESFP</option>
+                    <option value="INTP">INTP</option>
+                </select>
+                <label>Groupmate 1 Astro:</label>
+                <select name="groupmate1_astro">
+                    <option value="Aries">Aries</option>
+                    <option value="Taurus">Taurus</option>
+                    <option value="Gemini">Gemini</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Sagittarius">Sagittarius</option>
+                    <option value="Capricorn">Capricorn</option>
+                    <option value="Aquarius">Aquarius</option>
+                    <option value="Pisces">Pisces</option>
+                </select><br>
+            
+                <!-- Repeat blocks for groupmates 2, 3, and 4 -->
+                <!-- Inputs for groupmate 2 -->
+                <label>Groupmate 2 MBTI:</label>
+                <select name="groupmate1_mbti">
+                    <option value="INTJ">INTJ</option>
+                    <option value="ENTJ">ENTJ</option>
+                    <option value="ENTP">ENTP</option>
+                    <option value="INFJ">INFJ</option>
+                    <option value="INFP">INFP</option>
+                    <option value="ENFJ">ENFJ</option>
+                    <option value="ENFP">ENFP</option>
+                    <option value="ISTJ">ISTJ</option>
+                    <option value="ISFJ">ISFJ</option>
+                    <option value="ESTJ">ESTJ</option>
+                    <option value="ESFJ">ESFJ</option>
+                    <option value="ISTP">ISTP</option>
+                    <option value="ISFP">ISFP</option>
+                    <option value="ESTP">ESTP</option>
+                    <option value="ESFP">ESFP</option>
+                    <option value="INTP">INTP</option>
+                </select>
+                <label>Groupmate 2 Astro:</label>
+                <select name="groupmate1_astro">
+                    <option value="Aries">Aries</option>
+                    <option value="Taurus">Taurus</option>
+                    <option value="Gemini">Gemini</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Sagittarius">Sagittarius</option>
+                    <option value="Capricorn">Capricorn</option>
+                    <option value="Aquarius">Aquarius</option>
+                    <option value="Pisces">Pisces</option>
+                </select><br>
+
+                <!-- Inputs for groupmate 3 -->
+                <label>Groupmate 3 MBTI:</label>
+                <select name="groupmate1_mbti">
+                    <option value="INTJ">INTJ</option>
+                    <option value="ENTJ">ENTJ</option>
+                    <option value="ENTP">ENTP</option>
+                    <option value="INFJ">INFJ</option>
+                    <option value="INFP">INFP</option>
+                    <option value="ENFJ">ENFJ</option>
+                    <option value="ENFP">ENFP</option>
+                    <option value="ISTJ">ISTJ</option>
+                    <option value="ISFJ">ISFJ</option>
+                    <option value="ESTJ">ESTJ</option>
+                    <option value="ESFJ">ESFJ</option>
+                    <option value="ISTP">ISTP</option>
+                    <option value="ISFP">ISFP</option>
+                    <option value="ESTP">ESTP</option>
+                    <option value="ESFP">ESFP</option>
+                    <option value="INTP">INTP</option>
+                </select>
+                <label>Groupmate 3 Astro:</label>
+                <select name="groupmate1_astro">
+                    <option value="Aries">Aries</option>
+                    <option value="Taurus">Taurus</option>
+                    <option value="Gemini">Gemini</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Sagittarius">Sagittarius</option>
+                    <option value="Capricorn">Capricorn</option>
+                    <option value="Aquarius">Aquarius</option>
+                    <option value="Pisces">Pisces</option>
+                </select><br>
+                <!-- Inputs for groupmate 4 -->
+                <label>Groupmate 4 MBTI:</label>
+                <select name="groupmate1_mbti">
+                    <option value="INTJ">INTJ</option>
+                    <option value="ENTJ">ENTJ</option>
+                    <option value="ENTP">ENTP</option>
+                    <option value="INFJ">INFJ</option>
+                    <option value="INFP">INFP</option>
+                    <option value="ENFJ">ENFJ</option>
+                    <option value="ENFP">ENFP</option>
+                    <option value="ISTJ">ISTJ</option>
+                    <option value="ISFJ">ISFJ</option>
+                    <option value="ESTJ">ESTJ</option>
+                    <option value="ESFJ">ESFJ</option>
+                    <option value="ISTP">ISTP</option>
+                    <option value="ISFP">ISFP</option>
+                    <option value="ESTP">ESTP</option>
+                    <option value="ESFP">ESFP</option>
+                    <option value="INTP">INTP</option>
+                </select>
+                <label>Groupmate 4 Astro:</label>
+                <select name="groupmate1_astro">
+                    <option value="Aries">Aries</option>
+                    <option value="Taurus">Taurus</option>
+                    <option value="Gemini">Gemini</option>
+                    <option value="Cancer">Cancer</option>
+                    <option value="Leo">Leo</option>
+                    <option value="Virgo">Virgo</option>
+                    <option value="Libra">Libra</option>
+                    <option value="Scorpio">Scorpio</option>
+                    <option value="Sagittarius">Sagittarius</option>
+                    <option value="Capricorn">Capricorn</option>
+                    <option value="Aquarius">Aquarius</option>
+                    <option value="Pisces">Pisces</option>
+                </select><br>
+
+
+                <button type="submit">Find My Team</button>
+            </form>            
+        </div>
+        <div class="card student-list">
+            <h2>Manage Students</h2>
+            <ul id="student-list">
+                <!-- Dynamically added student entries will go here -->
+            </ul>
+            <form class="add-student-form">
+                <input type="text" id="new-student-name" class="student-input" placeholder="Enter student name"
+                    required>
+                <button type="button" onclick="addStudent()">Add Student</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Project by Linhao Jiang and Jasmine Zhang</p>
+    </footer>
+</body>
+
+</html>

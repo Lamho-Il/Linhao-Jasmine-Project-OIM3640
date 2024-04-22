@@ -93,7 +93,8 @@
     <div class="container">
         <div class="card">
             <h2>Get Started</h2>
-            <p>Enter your MBTI type and astrological sign to find the best team match for your next project:</p>
+            <p>Enter your MBTI type and astrological sign to find the best team match for your next project (Max three
+                teammates):</p>
             <form action="/submit" method="post">
                 <label for="mbti">Your MBTI Type:</label>
                 <select name="mbti" id="mbti">
@@ -129,171 +130,92 @@
                     <option value="Aquarius">Aquarius</option>
                     <option value="Pisces">Pisces</option>
                 </select><br>
-            
-                <h3>Potential Groupmates:</h3>
-                <!-- Inputs for groupmate 1 -->
-                <label>Groupmate 1 MBTI:</label>
-                <select name="groupmate1_mbti">
-                    <option value="INTJ">INTJ</option>
-                    <option value="ENTJ">ENTJ</option>
-                    <option value="ENTP">ENTP</option>
-                    <option value="INFJ">INFJ</option>
-                    <option value="INFP">INFP</option>
-                    <option value="ENFJ">ENFJ</option>
-                    <option value="ENFP">ENFP</option>
-                    <option value="ISTJ">ISTJ</option>
-                    <option value="ISFJ">ISFJ</option>
-                    <option value="ESTJ">ESTJ</option>
-                    <option value="ESFJ">ESFJ</option>
-                    <option value="ISTP">ISTP</option>
-                    <option value="ISFP">ISFP</option>
-                    <option value="ESTP">ESTP</option>
-                    <option value="ESFP">ESFP</option>
-                    <option value="INTP">INTP</option>
-                </select>
-                <label>Groupmate 1 Astro:</label>
-                <select name="groupmate1_astro">
-                    <option value="Aries">Aries</option>
-                    <option value="Taurus">Taurus</option>
-                    <option value="Gemini">Gemini</option>
-                    <option value="Cancer">Cancer</option>
-                    <option value="Leo">Leo</option>
-                    <option value="Virgo">Virgo</option>
-                    <option value="Libra">Libra</option>
-                    <option value="Scorpio">Scorpio</option>
-                    <option value="Sagittarius">Sagittarius</option>
-                    <option value="Capricorn">Capricorn</option>
-                    <option value="Aquarius">Aquarius</option>
-                    <option value="Pisces">Pisces</option>
-                </select><br>
-            
-                <!-- Repeat blocks for groupmates 2, 3, and 4 -->
-                <!-- Inputs for groupmate 2 -->
-                <label>Groupmate 2 MBTI:</label>
-                <select name="groupmate1_mbti">
-                    <option value="INTJ">INTJ</option>
-                    <option value="ENTJ">ENTJ</option>
-                    <option value="ENTP">ENTP</option>
-                    <option value="INFJ">INFJ</option>
-                    <option value="INFP">INFP</option>
-                    <option value="ENFJ">ENFJ</option>
-                    <option value="ENFP">ENFP</option>
-                    <option value="ISTJ">ISTJ</option>
-                    <option value="ISFJ">ISFJ</option>
-                    <option value="ESTJ">ESTJ</option>
-                    <option value="ESFJ">ESFJ</option>
-                    <option value="ISTP">ISTP</option>
-                    <option value="ISFP">ISFP</option>
-                    <option value="ESTP">ESTP</option>
-                    <option value="ESFP">ESFP</option>
-                    <option value="INTP">INTP</option>
-                </select>
-                <label>Groupmate 2 Astro:</label>
-                <select name="groupmate1_astro">
-                    <option value="Aries">Aries</option>
-                    <option value="Taurus">Taurus</option>
-                    <option value="Gemini">Gemini</option>
-                    <option value="Cancer">Cancer</option>
-                    <option value="Leo">Leo</option>
-                    <option value="Virgo">Virgo</option>
-                    <option value="Libra">Libra</option>
-                    <option value="Scorpio">Scorpio</option>
-                    <option value="Sagittarius">Sagittarius</option>
-                    <option value="Capricorn">Capricorn</option>
-                    <option value="Aquarius">Aquarius</option>
-                    <option value="Pisces">Pisces</option>
-                </select><br>
 
-                <!-- Inputs for groupmate 3 -->
-                <label>Groupmate 3 MBTI:</label>
-                <select name="groupmate1_mbti">
-                    <option value="INTJ">INTJ</option>
-                    <option value="ENTJ">ENTJ</option>
-                    <option value="ENTP">ENTP</option>
-                    <option value="INFJ">INFJ</option>
-                    <option value="INFP">INFP</option>
-                    <option value="ENFJ">ENFJ</option>
-                    <option value="ENFP">ENFP</option>
-                    <option value="ISTJ">ISTJ</option>
-                    <option value="ISFJ">ISFJ</option>
-                    <option value="ESTJ">ESTJ</option>
-                    <option value="ESFJ">ESFJ</option>
-                    <option value="ISTP">ISTP</option>
-                    <option value="ISFP">ISFP</option>
-                    <option value="ESTP">ESTP</option>
-                    <option value="ESFP">ESFP</option>
-                    <option value="INTP">INTP</option>
-                </select>
-                <label>Groupmate 3 Astro:</label>
-                <select name="groupmate1_astro">
-                    <option value="Aries">Aries</option>
-                    <option value="Taurus">Taurus</option>
-                    <option value="Gemini">Gemini</option>
-                    <option value="Cancer">Cancer</option>
-                    <option value="Leo">Leo</option>
-                    <option value="Virgo">Virgo</option>
-                    <option value="Libra">Libra</option>
-                    <option value="Scorpio">Scorpio</option>
-                    <option value="Sagittarius">Sagittarius</option>
-                    <option value="Capricorn">Capricorn</option>
-                    <option value="Aquarius">Aquarius</option>
-                    <option value="Pisces">Pisces</option>
-                </select><br>
-                <!-- Inputs for groupmate 4 -->
-                <label>Groupmate 4 MBTI:</label>
-                <select name="groupmate1_mbti">
-                    <option value="INTJ">INTJ</option>
-                    <option value="ENTJ">ENTJ</option>
-                    <option value="ENTP">ENTP</option>
-                    <option value="INFJ">INFJ</option>
-                    <option value="INFP">INFP</option>
-                    <option value="ENFJ">ENFJ</option>
-                    <option value="ENFP">ENFP</option>
-                    <option value="ISTJ">ISTJ</option>
-                    <option value="ISFJ">ISFJ</option>
-                    <option value="ESTJ">ESTJ</option>
-                    <option value="ESFJ">ESFJ</option>
-                    <option value="ISTP">ISTP</option>
-                    <option value="ISFP">ISFP</option>
-                    <option value="ESTP">ESTP</option>
-                    <option value="ESFP">ESFP</option>
-                    <option value="INTP">INTP</option>
-                </select>
-                <label>Groupmate 4 Astro:</label>
-                <select name="groupmate1_astro">
-                    <option value="Aries">Aries</option>
-                    <option value="Taurus">Taurus</option>
-                    <option value="Gemini">Gemini</option>
-                    <option value="Cancer">Cancer</option>
-                    <option value="Leo">Leo</option>
-                    <option value="Virgo">Virgo</option>
-                    <option value="Libra">Libra</option>
-                    <option value="Scorpio">Scorpio</option>
-                    <option value="Sagittarius">Sagittarius</option>
-                    <option value="Capricorn">Capricorn</option>
-                    <option value="Aquarius">Aquarius</option>
-                    <option value="Pisces">Pisces</option>
-                </select><br>
-
+                <div id="teammates-container">
+                    <!-- Teammate inputs will be added here dynamically -->
+                </div>
+                <button type="button" onclick="addTeammate()">Add Teammate</button><br><br>
 
                 <button type="submit">Find My Team</button>
-            </form>            
-        </div>
-        <div class="card student-list">
-            <h2>Manage Students</h2>
-            <ul id="student-list">
-                <!-- Dynamically added student entries will go here -->
-            </ul>
-            <form class="add-student-form">
-                <input type="text" id="new-student-name" class="student-input" placeholder="Enter student name"
-                    required>
-                <button type="button" onclick="addStudent()">Add Student</button>
             </form>
         </div>
     </div>
     <footer>
         <p>Project by Linhao Jiang and Jasmine Zhang</p>
     </footer>
+    <script>
+        let teammateCount = 0; // Tracks the number of current teammates
+
+        function addTeammate() {
+            if (teammateCount < 3) { // Limit to 3 additional teammates
+                const container = document.getElementById('teammates-container');
+                const div = document.createElement('div');
+                div.className = 'teammate-entry';
+                div.id = 'teammate-' + teammateCount;
+
+                const mbtiLabel = document.createElement('label');
+                mbtiLabel.textContent = `Teammate ${teammateCount + 1} MBTI:`;
+                const mbtiSelect = document.createElement('select');
+                mbtiSelect.name = `groupmate${teammateCount}_mbti`;
+                ["INTJ", "ENTJ", "ENTP", "INFJ", "INFP", "ENFJ", "ENFP", "ISTJ", "ISFJ", "ESTJ", "ESFJ", "ISTP", "ISFP", "ESTP", "ESFP", "INTP"].forEach(optionValue => {
+                    const option = document.createElement('option');
+                    option.value = optionValue;
+                    option.textContent = optionValue;
+                    mbtiSelect.appendChild(option);
+                });
+
+                const astroLabel = document.createElement('label');
+                astroLabel.textContent = `Teammate ${teammateCount + 1} Astro:`;
+                const astroSelect = document.createElement('select');
+                astroSelect.name = `groupmate${teammateCount}_astro`;
+                ["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"].forEach(optionValue => {
+                    const option = document.createElement('option');
+                    option.value = optionValue;
+                    option.textContent = optionValue;
+                    astroSelect.appendChild(option);
+                });
+
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.type = 'button';
+                removeButton.onclick = function () {
+                    removeTeammate(div.id);
+                };
+
+                div.appendChild(mbtiLabel);
+                div.appendChild(mbtiSelect);
+                div.appendChild(astroLabel);
+                div.appendChild(astroSelect);
+                div.appendChild(removeButton);
+
+                container.appendChild(div);
+                teammateCount++;
+            }
+        }
+
+        function removeTeammate(teammateId) {
+            const teammate = document.getElementById(teammateId);
+            if (teammate) {
+                teammate.parentNode.removeChild(teammate);
+                // After removing, update the teammate count and labels correctly
+                updateTeammateLabels();
+            }
+        }
+
+        function updateTeammateLabels() {
+            const teammates = document.querySelectorAll('.teammate-entry');
+            teammates.forEach((teammate, index) => {
+                teammate.id = 'teammate-' + index; // Update IDs to be in order
+                const labels = teammate.getElementsByTagName('label');
+                labels[0].textContent = `Teammate ${index + 1} MBTI:`; // Correctly identifying the first label for MBTI
+                teammate.getElementsByTagName('select')[0].name = `groupmate${index}_mbti`; // Update the name of the MBTI select
+                labels[1].textContent = `Teammate ${index + 1} Astro:`; // Correctly identifying the second label for Astro
+                teammate.getElementsByTagName('select')[1].name = `groupmate${index}_astro`; // Update the name of the Astro select
+            });
+            teammateCount = teammates.length; // Update global count based on remaining teammates
+        }
+    </script>
+
 </body>
 
 </html>
