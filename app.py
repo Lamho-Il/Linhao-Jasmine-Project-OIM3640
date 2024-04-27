@@ -47,7 +47,7 @@ def submit():
 
         print(f"User MBTI: {user_mbti}, User Astro: {user_astro}")
 
-        for i in range(1, 4):  # 3 groupmates
+        for i in range(3):  # 3 groupmates
             groupmate_mbti = request.form.get(f"groupmate{i}_mbti")
             groupmate_astro = request.form.get(f"groupmate{i}_astro")
             if groupmate_mbti and groupmate_astro:
