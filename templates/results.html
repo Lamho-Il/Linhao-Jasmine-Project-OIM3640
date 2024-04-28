@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compatibility Results</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        .results-container {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .result {
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+            width: 80%;
+            /* Set a max width for readability */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Add shadow for better emphasis */
+        }
+
+        h2,
+        h3 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
     <header>
         <h1>Compatibility Results</h1>
@@ -13,15 +75,16 @@
     <div class="results-container">
         <h2>Overall Compatibility Score: {{ results.overall_score }}</h2>
         {% for detail in results.details %}
-            <div class="result">
-                <h3>Groupmate {{ detail.groupmate_index }} - {{ detail.groupmate_mbti }} ({{ detail.groupmate_astro }})</h3>
-                <p>Individual Score: {{ detail.score }}</p>
-                <p>{{ detail.explanation }}</p>
-            </div>
+        <div class="result">
+            <h3>Groupmate {{ detail.groupmate_index }} - {{ detail.groupmate_mbti }} ({{ detail.groupmate_astro }})</h3>
+            <p>Individual Score: {{ detail.score }}</p>
+            <p>{{ detail.explanation }}</p>
+        </div>
         {% endfor %}
     </div>
     <footer>
         <a href="/">Go Back</a>
     </footer>
 </body>
+
 </html>
