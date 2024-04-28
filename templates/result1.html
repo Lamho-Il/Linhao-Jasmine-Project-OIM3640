@@ -11,12 +11,10 @@
         <h1>Compatibility Results</h1>
     </header>
     <div class="results-container">
-        <h2>Overall Compatibility Score: {{ results.overall_score }}</h2>
-        {% for detail in results.details %}
+        {% for result in results %}
             <div class="result">
-                <h3>Groupmate {{ detail.groupmate_index }} - {{ detail.groupmate_mbti }} ({{ detail.groupmate_astro }})</h3>
-                <p>Individual Score: {{ detail.score }}</p>
-                <p>{{ detail.explanation }}</p>
+                <p>Groupmate MBTI: {{ result.mbti }}, Astro: {{ result.astro }}</p>
+                <p>Compatibility: {{ result.compatibility }}</p>
             </div>
         {% endfor %}
     </div>
