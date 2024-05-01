@@ -6,14 +6,14 @@ Team members: Linhao Jiang, Jasmine Zhang
 
 ## Big Idea:
 
-We want to develop a team web platform that aims to improve the group project experience in educational settings. Leveraging the power of OpenAI, specifically ChatGPT, our application will automate the team formation process based on users' workplace personality types and MBTI assessments. This innovative approach facilitates the creation of balanced and cohesive teams, where each member's strengths and preferences are optimally aligned for collective success. The platform will support different group sizes, allowing teams from 2 to 6 members, and providing flexibility for different project needs and classroom settings.
+We want to develop a team web platform that aims to improve the group project experience in educational settings. Leveraging the power of OpenAI, specifically ChatGPT, our application will automate the team formation process based on users' astrological signs and MBTI assessments. This innovative approach facilitates the creation of balanced and cohesive teams, where each member's strengths and preferences are optimally aligned for collective success. The platform will support different group sizes, allowing teams from 2 to 4 members, and providing flexibility for different project needs and classroom settings.
 
 ## Minimum Viable Product (MVP):
 
 - A code for users to scan and match with their assigned course.
-- A simple, intuitive interface for users to input their workplace personality type and MBTI.
+- A simple, intuitive interface for users to input their astrological signs and MBTI.
 - An algorithm leveraging ChatGPT to suggest team compositions based on the entered data.
-- Support for generating teams of various sizes (2 to 6 members), tailored to the requirements of different classroom projects.
+- Support for generating teams of various sizes (2 to 4 members), tailored to the requirements of different classroom projects.
 
 ## Learning Goals
 
@@ -35,10 +35,12 @@ We want to develop a team web platform that aims to improve the group project ex
 
 ### Development Phases:
 
-1. **Initial Setup and Research**
-2. **Prototype Development**
-3. **Core Functionality Implementation**
-4. **Integration and Testing**
+1. **Initial Setup and Research** :We set out to gather all the clues we could about how to best blend personality traits (using the MBTI system) and astrological signs to help students find their perfect project teammates. We stored MBTI and Astrological scores in dictionaries to predefine compatibility scores between different MBTI types and astrological signs. The scores were generated from ChatGpt
+2. **Prototype Development**: 
+3. **Core Functionality Implementation** : Some core functions include calculate_compatibility(): to calculate the compatibility scores between the user and each group member based on MBTI and astrological sign. It averages the scores from both system and calculate an overall group compatibility score.
+clean_text(): were used because during our testing process, we realized that there were some unexpected characters occuring in our analysis. Chatpgt asisted us to remove non-ASCII characters from text. To ensure the text displays clean characters. 
+get_compatibiloty_analysis(): is for generating detailed compatility explanations using OpenAi's API. It sends a prompt to the API and processs the response, and then structure it into a format suitable for display. 
+4. **Integration and Testing**: I faced issues with incomplete or cut-off responses from the OpenAi API due to the 'max_tokens' parameter beign set too low. Another issues was the unwanted characters or non-English responses. So implemented a 'clean_text' function to sanitize the API outputs. 
 5. **Finalization and Documentation**
 
 ### Continuous Learning and Adaptation
