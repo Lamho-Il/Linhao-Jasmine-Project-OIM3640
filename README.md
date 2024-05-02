@@ -35,13 +35,13 @@ We want to develop a team web platform that aims to improve the group project ex
 
 ### Development Phases:
 
-1. **Initial Setup and Research** :We set out to gather all the clues we could about how to best blend personality traits (using the MBTI system) and astrological signs to help students find their perfect project teammates. We stored MBTI and Astrological scores in dictionaries to predefine compatibility scores between different MBTI types and astrological signs. The scores were generated from ChatGpt
-2. **Prototype Development**: 
-3. **Core Functionality Implementation** : Some core functions include calculate_compatibility(): to calculate the compatibility scores between the user and each group member based on MBTI and astrological sign. It averages the scores from both system and calculate an overall group compatibility score.
-clean_text(): were used because during our testing process, we realized that there were some unexpected characters occuring in our analysis. Chatpgt asisted us to remove non-ASCII characters from text. To ensure the text displays clean characters. 
-get_compatibiloty_analysis(): is for generating detailed compatility explanations using OpenAi's API. It sends a prompt to the API and processs the response, and then structure it into a format suitable for display. 
-4. **Integration and Testing**: I faced issues with incomplete or cut-off responses from the OpenAi API due to the 'max_tokens' parameter beign set too low. Another issues was the unwanted characters or non-English responses. So implemented a 'clean_text' function to sanitize the API outputs. 
-5. **Finalization and Documentation**
+1. **Initial Setup and Research**: We set out to gather all the clues we could about how to best blend personality traits (using the MBTI system) and astrological signs to help students find their perfect project teammates. We stored MBTI and Astrological scores in dictionaries to predefine compatibility scores between different MBTI types and astrological signs. The scores were generated from ChatGpt
+2. **Prototype Development**: A basic prototype was developed to outline the core features of the application. This included a simple web interface built using Flask and a basic backend structure that demonstrated how user input (MBTI type and astrological sign) would be processed. 
+3. **Core Functionality Implementation**: Some core functions include calculate_compatibility(): to calculate the compatibility scores between the user and each group member based on MBTI and astrological sign. It averages the scores from both systems and calculates an overall group compatibility score.
+clean_text(): were used because during our testing process, we realized that some unexpected characters were occurring in our analysis. Chatpgt assisted us in removing non-ASCII characters from the text. To ensure the text displays clean characters. 
+get_compatibiloty_analysis(): is for generating detailed compatibility explanations using OpenAi's API. It sends a prompt to the API processes the response, and then structures it into a format suitable for display. 
+4. **Integration and Testing**: We faced issues with incomplete or cut-off responses from the OpenAi API due to the 'max_tokens' parameter being set too low. Another issue was the unwanted characters or non-English responses. So implemented a 'clean_text' function to sanitize the API outputs. 
+5. **Finalization and Documentation**: Final adjustments were made based on testing feedback and Professor Li, and the application was polished for deployment.
 
 ### Continuous Learning and Adaptation
 
